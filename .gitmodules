@@ -1,3 +1,6 @@
 [submodule "lib/magit"]
 	path = lib/magit
 	url = git@github.com:magit/magit.git
+[submodule "lib/epy"]
+	path = lib/epy
+	url = git@github.com:gabrielelanaro/emacs-for-python.git
