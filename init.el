@@ -4,7 +4,6 @@
 ;; See README for more information.
 
 ;; Load bindings config
-(setq test-sym "abc")
 (live-load-config-file "bindings.el")
 (live-add-pack-lib "epy")
 (live-add-pack-lib "epy/extensions")
