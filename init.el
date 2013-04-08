@@ -6,7 +6,7 @@
 ;; Load bindings config
 (setq test-sym "abc")
 (live-load-config-file "bindings.el")
-(add-to-list 'load-path "lib/epy")
-(add-to-list 'load-path "lib/epy/extensions")
-;(require 'epy-nose)
-;(require 'virtualenv)
+(live-add-pack-lib "epy")
+(live-add-pack-lib "epy/extensions")
+(require 'epy-nose)
+(require 'virtualenv)
