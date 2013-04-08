@@ -9,4 +9,4 @@
 (add-to-list 'load-path "lib/epy")
 (add-to-list 'load-path "lib/epy/extensions")
 ;(require 'epy-nose)
-(require 'virtualenv)
+;(require 'virtualenv)
