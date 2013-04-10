@@ -9,3 +9,8 @@
 (live-add-pack-lib "epy/extensions")
 (require 'epy-nose)
 (require 'virtualenv)
+
+
+; This assumes that you've installed aspell via brew.
+(setq ispell-program-name "aspell")
+(add-to-list 'exec-path "/usr/local/bin")
