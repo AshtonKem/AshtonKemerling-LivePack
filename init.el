@@ -19,3 +19,7 @@
 ; Pylint
 (autoload 'python-pylint "python-pylint")
 (autoload 'pylint "python-pylint")
+
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq c-basic-offset 4)
