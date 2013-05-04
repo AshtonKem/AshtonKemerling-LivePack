@@ -24,3 +24,16 @@
           (function (lambda ()
                       (setq indent-tabs-mode nil
                             tab-width 4))))
+
+(require 'package)
+(add-to-list 'package-archives
+    '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
+(add-to-list 'load-path "/Users/ashtonkemerling/Documents/Butler")
+(require 'butler)
+(add-to-list 'butler-servers
+             '(jenkins "Jenkins"
+                       (server-address . "https://jenkins.n-s.us/jenkins/view/Data%20Engine/")
+                       (auth-file . "~/.authinfo.gpg")))
