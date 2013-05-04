@@ -8,6 +8,7 @@
 (live-add-pack-lib "epy")
 (live-add-pack-lib "pylint")
 (live-add-pack-lib "epy/extensions")
+(live-add-pack-lib "w3m")
 (require 'epy-nose)
 (require 'virtualenv)
 
