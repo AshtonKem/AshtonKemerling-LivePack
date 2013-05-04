@@ -37,3 +37,56 @@
              '(jenkins "Jenkins"
                        (server-address . "https://jenkins.n-s.us/jenkins/view/Data%20Engine/")
                        (auth-file . "~/.authinfo.gpg")))
+
+(require 'gnus)
+
+(setq gnus-secondary-select-methods
+      '((nnimap "home"
+                (nnimap-address "imap.gmail.com")
+                (nnimap-server-port 993)
+                (nnimap-stream ssl)
+                (nnimap-list-pattern
+                 ("INBOX" "*"))
+                (nnimap-authinfo-file "~/.authinfo"))
+        (nnimap "work"
+                (nnimap-address "imap.gmail.com")
+                (nnimap-server-port 993)
+                (nnimap-stream ssl)
+                (nnimap-list-pattern
+                 ("INBOX" "*"))
+                (nnimap-authinfo-file "~/.authinfo"))))
+
+(setq gnus-parameters
+      '(("nnimap+work:*"
+         (display . all)
+         (posting-style
+          (name "Ashton Kemerling")
+          (address "akemerling@narrativescience.com")
+          (organization "Narrative Science")
+          (signature-file "~/.signature"))
+         (expiry-target . delete)
+        ("nnimap+work:[Gmail]/.*"
+         (display . all)
+         (posting-style
+          (name "Ashton Kemerling")
+          (address "akemerling@narrativescience.com")
+          (organization "Narrative Science")
+          (signature-file "~/.signature"))
+         (expiry-wait . never))
+        ("nnimap+home:*"
+         (display . all)
+         (posting-style
+          (name "Ashton Kemerling")
+          (address "ashtonkemerling@gmail.com")
+          (signature-file "~/.signature"))
+         (expiry-target . delete)
+        ("nnimap+home:[Gmail]/.*"
+         (display . all)
+         (posting-style
+          (name "Ashton Kemerling")
+          (address "ashtonkemerling@gmail.com")
+          (signature-file "~/.signature"))
+         (expiry-wait . never))))))
+
+
+ (setq gnus-permanently-visible-groups ".*")
