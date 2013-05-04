@@ -90,4 +90,16 @@
          (expiry-wait . never))))))
 
 
- (setq gnus-permanently-visible-groups ".*")
+(setq gnus-permanently-visible-groups ".*")
+
+(setq gnus-posting-styles
+             '((".*"
+                (address "ashtonkemerling@gmail.com")
+                (name "Ashton Kemerling"))
+               (".*work:.*"
+                (address "akemerling@narrativescience.com")
+                (name "Ashton Kemerling")
+                (organization "Narrative Science"))
+               (".*home:.*"
+                (address "ashtonkemerling@gmail.com")
+                (name "Ashton Kemerling"))))
