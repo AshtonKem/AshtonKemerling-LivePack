@@ -9,8 +9,12 @@
 (live-add-pack-lib "pylint")
 (live-add-pack-lib "epy/extensions")
 (live-add-pack-lib "w3m")
+(live-add-pack-lib "twittering-mode")
+(require 'gnus)
 (require 'epy-nose)
 (require 'virtualenv)
+(require 'package)
+(require 'twittering-mode)
 
 
 ; This assumes that you've installed aspell via brew.
@@ -26,7 +30,7 @@
                       (setq indent-tabs-mode nil
                             tab-width 4))))
 
-(require 'package)
+
 (add-to-list 'package-archives
     '("marmalade" .
       "http://marmalade-repo.org/packages/"))
@@ -39,7 +43,7 @@
                        (server-address . "https://jenkins.n-s.us/jenkins/view/Data%20Engine/")
                        (auth-file . "~/.authinfo.gpg")))
 
-(require 'gnus)
+
 
 (setq gnus-secondary-select-methods
       '((nnimap "home"
