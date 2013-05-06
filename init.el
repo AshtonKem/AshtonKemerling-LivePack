@@ -16,6 +16,9 @@
 (require 'package)
 (require 'twittering-mode)
 
+;; Twittering-mode
+(setq twittering-use-master-password t)
+
 
 ; This assumes that you've installed aspell via brew.
 (setq ispell-program-name "aspell")
