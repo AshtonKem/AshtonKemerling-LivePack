@@ -16,11 +16,17 @@
 (require 'package)
 (require 'twittering-mode)
 
+(add-to-list 'package-archives
+    '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
 ;; Org Mode
 (setq org-agenda-files '("~/org/work.org"
                          "~/org/projects.org"))
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
 (setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
+
 ;; Twittering-mode
 (setq twittering-use-master-password t)
 
