@@ -12,6 +12,7 @@
 (live-add-pack-lib "twittering-mode")
 (live-load-config-file "python.el")
 (require 'gnus)
+(live-load-config-file "org.el")
 (require 'package)
 (require 'twittering-mode)
 
@@ -19,12 +20,6 @@
     '("marmalade" .
       "http://marmalade-repo.org/packages/"))
 (package-initialize)
-
-;; Org Mode
-(setq org-agenda-files '("~/org/work.org"
-                         "~/org/projects.org"))
-(setq org-mobile-inbox-for-pull "~/org/flagged.org")
-(setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
 
 ;; Twittering-mode
 (setq twittering-use-master-password t)
