@@ -12,7 +12,6 @@
 (live-add-pack-lib "twittering-mode")
 (live-load-config-file "python.el")
 (require 'gnus)
-(require 'virtualenv)
 (require 'package)
 (require 'twittering-mode)
 
