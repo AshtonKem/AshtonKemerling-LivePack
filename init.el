@@ -10,8 +10,8 @@
 (live-add-pack-lib "epy/extensions")
 (live-add-pack-lib "w3m")
 (live-add-pack-lib "twittering-mode")
+(live-load-config-file "python.el")
 (require 'gnus)
-(require 'epy-nose)
 (require 'virtualenv)
 (require 'package)
 (require 'twittering-mode)
@@ -24,20 +24,9 @@
 (setq ispell-program-name "aspell")
 (add-to-list 'exec-path "/usr/local/bin")
 
-; Pylint
-(autoload 'python-pylint "python-pylint")
-(autoload 'pylint "python-pylint")
-
-(add-hook 'python-mode-hook
-          (function (lambda ()
-                      (setq indent-tabs-mode nil
-                            tab-width 4))))
 
 
-(add-to-list 'package-archives
-    '("marmalade" .
-      "http://marmalade-repo.org/packages/"))
-(package-initialize)
+
 
 (add-to-list 'load-path "/Users/ashtonkemerling/Documents/Butler")
 (require 'butler)
