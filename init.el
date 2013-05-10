@@ -10,6 +10,7 @@
 (live-add-pack-lib "epy/extensions")
 (live-add-pack-lib "w3m")
 (live-add-pack-lib "twittering-mode")
+(live-add-pack-lib "org-jira")
 (live-load-config-file "python.el")
 (live-load-config-file "org.el")
 (live-load-config-file "gnus.el")
