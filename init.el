@@ -25,10 +25,6 @@
 (require 'package)
 (require 'twittering-mode)
 
-(add-to-list 'package-archives
-    '("marmalade" .
-      "http://marmalade-repo.org/packages/"))
-(package-initialize)
 
 ;; Twittering-mode
 (setq twittering-use-master-password t)
