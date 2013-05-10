@@ -4,6 +4,14 @@
 ;; See README for more information.
 
 ;; Load bindings config
+
+(require 'package)
+(add-to-list 'package-archives
+    '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
+
 (live-load-config-file "bindings.el")
 (live-add-pack-lib "epy")
 (live-add-pack-lib "pylint")
