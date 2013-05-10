@@ -22,6 +22,8 @@
 (live-load-config-file "python.el")
 (live-load-config-file "org.el")
 (live-load-config-file "gnus.el")
+(live-load-config-file "butler.el")
+
 (require 'twittering-mode)
 
 
@@ -32,14 +34,3 @@
 ; This assumes that you've installed aspell via brew.
 (setq ispell-program-name "aspell")
 (add-to-list 'exec-path "/usr/local/bin")
-
-
-
-
-
-(add-to-list 'load-path "/Users/ashtonkemerling/Documents/Butler")
-(require 'butler)
-(add-to-list 'butler-servers
-             '(jenkins "Jenkins"
-                       (server-address . "https://jenkins.n-s.us/jenkins/view/Data%20Engine/")
-                       (auth-file . "~/.authinfo.gpg")))
