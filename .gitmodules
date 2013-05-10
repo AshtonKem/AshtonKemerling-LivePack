@@ -4,3 +4,6 @@
 [submodule "lib/twittering-mode"]
 	path = lib/twittering-mode
 	url = git@github.com:hayamiz/twittering-mode.git
+[submodule "lib/org-jira"]
+	path = lib/org-jira
+	url = git://github.com/baohaojun/org-jira.git
