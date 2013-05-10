@@ -5,12 +5,6 @@
 
 ;; Load bindings config
 
-(require 'package)
-(add-to-list 'package-archives
-    '("marmalade" .
-      "http://marmalade-repo.org/packages/"))
-(package-initialize)
-
 
 (live-load-config-file "bindings.el")
 (live-add-pack-lib "epy")
@@ -19,9 +13,11 @@
 (live-add-pack-lib "w3m")
 (live-add-pack-lib "twittering-mode")
 (live-add-pack-lib "org-jira")
+(live-load-config-file "packages.el")
 (live-load-config-file "python.el")
 (live-load-config-file "org.el")
 (live-load-config-file "gnus.el")
+
                                         ;(live-load-config-file "butler.el")
 (live-load-config-file "theme.el")
 
