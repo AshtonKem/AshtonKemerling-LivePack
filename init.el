@@ -22,7 +22,6 @@
 (live-load-config-file "python.el")
 (live-load-config-file "org.el")
 (live-load-config-file "gnus.el")
-(require 'package)
 (require 'twittering-mode)
 
 
