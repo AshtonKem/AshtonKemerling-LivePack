@@ -1,5 +1,6 @@
 (setq org-agenda-files '("~/org/work.org"
-                         "~/org/projects.org"))
+                         "~/org/projects.org"
+                         "~/org/chores.org"))
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
 (setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
 
