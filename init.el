@@ -33,3 +33,10 @@
 ; This assumes that you've installed aspell via brew.
 (setq ispell-program-name "aspell")
 (add-to-list 'exec-path "/usr/local/bin")
+
+
+;; Bookmarks!
+(require 'bm)
+(setq-default bm-buffer-persistence t)
+(require 'jabber)
+(add-hook 'jabber-chat-mode-hook 'goto-address)
