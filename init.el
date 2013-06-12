@@ -54,3 +54,6 @@
   (HEAD 2)
   (ANY 2)
   (context 2))
+
+
+(live-set-default-font "Source Code Pro")
