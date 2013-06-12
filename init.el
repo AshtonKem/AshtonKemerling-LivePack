@@ -11,7 +11,7 @@
 (live-add-pack-lib "pylint")
 (live-add-pack-lib "epy/extensions")
 (live-add-pack-lib "w3m")
-(live-add-pack-lib "twittering-mode")
+;(live-add-pack-lib "twittering-mode")
 (live-add-pack-lib "org-jira")
 (live-load-config-file "packages.el")
 (live-load-config-file "python.el")
@@ -19,15 +19,15 @@
 (live-load-config-file "gnus.el")
 (live-load-config-file "latex.el")
 
-(live-load-config-file "butler.el")
+;(live-load-config-file "butler.el")
 (live-load-config-file "theme.el")
 
 
-(require 'twittering-mode)
+;(require 'twittering-mode)
 
 
 ;; Twittering-mode
-(setq twittering-use-master-password t)
+;(setq twittering-use-master-password t)
 
 
 ; This assumes that you've installed aspell via brew.
