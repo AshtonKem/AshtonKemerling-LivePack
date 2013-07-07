@@ -7,6 +7,3 @@
 
 (when (not (require 'web nil t))
   (package-install 'web))
-
-(when (not (require 'solarized-theme nil t))
-  (package-install 'solarized-theme))
