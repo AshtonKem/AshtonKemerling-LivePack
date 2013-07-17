@@ -20,13 +20,13 @@
 (live-load-config-file "latex.el")
 
 ;(live-load-config-file "butler.el")
-;(live-load-config-file "theme.el")
+(live-load-config-file "theme.el")
 
 
 
 ;; Twittering-mode
-(require 'twittering-mode)
-(setq twittering-use-master-password t)
+;(require 'twittering-mode)
+;(setq twittering-use-master-password t)
 
 
 ; This assumes that you've installed aspell via brew.

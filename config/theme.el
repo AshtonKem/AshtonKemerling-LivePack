@@ -1,1 +1,2 @@
-(require 'solarized-theme)
+(require 'powerline)
+(powerline-default-theme)
