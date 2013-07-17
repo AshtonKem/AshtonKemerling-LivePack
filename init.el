@@ -11,7 +11,7 @@
 (live-add-pack-lib "pylint")
 (live-add-pack-lib "epy/extensions")
 (live-add-pack-lib "w3m")
-;(live-add-pack-lib "twittering-mode")
+(live-add-pack-lib "twittering-mode")
 (live-add-pack-lib "org-jira")
 (live-load-config-file "packages.el")
 (live-load-config-file "python.el")
@@ -23,11 +23,10 @@
 ;(live-load-config-file "theme.el")
 
 
-;(require 'twittering-mode)
-
 
 ;; Twittering-mode
-;(setq twittering-use-master-password t)
+(require 'twittering-mode)
+(setq twittering-use-master-password t)
 
 
 ; This assumes that you've installed aspell via brew.
@@ -36,8 +35,10 @@
 
 
 ;; Bookmarks!
-(require 'bm)
-(setq-default bm-buffer-persistence t)
+;(require 'bm)
+                                        ;(setq-default bm-buffer-persistence t)
+
+;; Jabber!
 (require 'jabber)
 (add-hook 'jabber-chat-mode-hook 'goto-address)
 
