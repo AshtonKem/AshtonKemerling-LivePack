@@ -39,8 +39,8 @@
                                         ;(setq-default bm-buffer-persistence t)
 
 ;; Jabber!
-(require 'jabber)
-(add-hook 'jabber-chat-mode-hook 'goto-address)
+;(require 'jabber)
+;(add-hook 'jabber-chat-mode-hook 'goto-address)
 
 
 ;; Clojure
