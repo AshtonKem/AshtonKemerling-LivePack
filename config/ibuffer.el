@@ -11,6 +11,8 @@
                ))
             ("Magit"
              (mode . magit-mode))
+            ("Butler"
+             (filename . "Documents/Butler"))
             ("Care For Real"
               (filename . "Documents/cfr-app"))
             ("Work"
