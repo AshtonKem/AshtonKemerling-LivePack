@@ -19,6 +19,7 @@
 (live-load-config-file "org.el")
 (live-load-config-file "gnus.el")
 (live-load-config-file "latex.el")
+(live-load-config-file "util.el")
 
 ;(live-load-config-file "butler.el")
 (live-load-config-file "theme.el")
