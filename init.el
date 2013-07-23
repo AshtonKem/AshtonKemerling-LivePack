@@ -13,12 +13,16 @@
 (live-add-pack-lib "w3m")
 (live-add-pack-lib "twittering-mode")
 (live-add-pack-lib "org-jira")
+(live-add-pack-lib "yafolding")
 (live-load-config-file "packages.el")
 (live-load-config-file "ibuffer.el")
 (live-load-config-file "python.el")
 (live-load-config-file "org.el")
 (live-load-config-file "gnus.el")
 (live-load-config-file "latex.el")
+
+;Load up our libraries, for binding sake.
+(require 'yafolding)
 
 ;(live-load-config-file "butler.el")
 (live-load-config-file "theme.el")

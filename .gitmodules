@@ -7,3 +7,6 @@
 [submodule "lib/org-jira"]
 	path = lib/org-jira
 	url = git://github.com/baohaojun/org-jira.git
+[submodule "lib/yafolding"]
+	path = lib/yafolding
+	url = git@github.com:zenozeng/yafolding.el.git
