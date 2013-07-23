@@ -5,8 +5,8 @@
 
 ;; Load bindings config
 
+(live-load-config-file "util.el")
 
-(live-load-config-file "bindings.el")
 (live-add-pack-lib "epy")
 (live-add-pack-lib "pylint")
 (live-add-pack-lib "epy/extensions")
@@ -19,10 +19,11 @@
 (live-load-config-file "org.el")
 (live-load-config-file "gnus.el")
 (live-load-config-file "latex.el")
-(live-load-config-file "util.el")
 
 ;(live-load-config-file "butler.el")
 (live-load-config-file "theme.el")
+;Bindings goes last, since other files define functions it references.
+(live-load-config-file "bindings.el")
 
 
 
