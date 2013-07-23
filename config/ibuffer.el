@@ -18,7 +18,8 @@
             ("Work"
              (or
               (filename . "Documents/ns_data")
-              (filename . "Documents/NS_text_tools")))
+              (filename . "Documents/NS_text_tools")
+              (filename . "Documents/Narrative-Science-Analytics")))
             ("Scheduling"
              (filename . "Documents/scheduler"))
             ("Programming" ;; prog stuff not already in MyProjectX
