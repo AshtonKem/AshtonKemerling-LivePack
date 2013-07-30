@@ -7,10 +7,13 @@
               (or  ;; mail-related buffers
                (mode . message-mode)
                (mode . mail-mode)
+               (mode . gnus-summary-mode)
+               (mode . gnus-article-mode)
+               (mode . gnus-group-mode)
                ;; etc.; all your mail related modes
                ))
             ("Magit"
-             (mode . magit-mode))
+             (mode . magit-status-mode))
             ("Butler"
              (filename . "Documents/Butler"))
             ("Care For Real"
