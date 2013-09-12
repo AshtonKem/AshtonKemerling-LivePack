@@ -24,6 +24,10 @@
 ;Load up our libraries, for binding sake.
 (require 'yafolding)
 
+;Evil
+(require 'evil)
+(evil-mode)
+
 ;(live-load-config-file "butler.el")
 (live-load-config-file "theme.el")
 ;Bindings goes last, since other files define functions it references.
@@ -65,3 +69,6 @@
 
 
 (live-set-default-font "Source Code Pro")
+
+;; Ansi-Term
+(setq system-uses-terminfo nil)
