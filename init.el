@@ -28,6 +28,11 @@
 (require 'evil)
 (evil-mode)
 
+
+;Edit with emacs
+(require 'edit-server)
+(edit-serveri-start)
+
 ;(live-load-config-file "butler.el")
 (live-load-config-file "theme.el")
 ;Bindings goes last, since other files define functions it references.
