@@ -25,13 +25,13 @@
 (require 'yafolding)
 
 ;Evil
-(require 'evil)
-(evil-mode)
+;(require 'evil)
+;(evil-mode)
 
 
 ;Edit with emacs
 (require 'edit-server)
-(edit-serveri-start)
+(edit-server-start)
 
 ;(live-load-config-file "butler.el")
 (live-load-config-file "theme.el")
