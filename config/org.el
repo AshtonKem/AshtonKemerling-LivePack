@@ -1,4 +1,5 @@
-(setq org-agenda-files '("~/org/work.org"
+(setq org-agenda-files '("~/org/gtd.org"
+                         "~/org/work.org"
                          "~/org/projects.org"
                          "~/org/chores.org"
                          "~/org/wedding.org"))
