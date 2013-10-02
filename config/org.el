@@ -4,9 +4,9 @@
                          "~/org/wedding.org"))
 
 (setq org-agenda-custom-commands
-           '(("h" tags "home")
-             ("g" tags "government")
-             ("s" tags "shopping")))
+      '(("h" tags "home+TODO=\"NEXT\"")
+        ("g" tags "government+TODO=\"NEXT\"")
+        ("s" tags "shopping+TODO=\"NEXT\"")))
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
 (setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
 (require 'org-jira)
