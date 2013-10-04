@@ -12,3 +12,6 @@
 
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
 (setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
+
+(setq org-default-notes-file "~/org/flagged.org")
+(define-key global-map "\C-cc" 'org-capture)
