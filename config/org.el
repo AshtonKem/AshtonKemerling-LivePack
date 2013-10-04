@@ -4,9 +4,11 @@
                          "~/org/wedding.org"))
 
 (setq org-agenda-custom-commands
-      '(("h" tags "home+TODO=\"NEXT\"|home+TODO=\"IN-PROGRESS\"")
-        ("g" tags "government+TODO=\"NEXT\"|government+TODO=\"IN-PROGRESS\"")
-        ("s" tags "shopping+TODO=\"NEXT\"|shopping+TODO=\"IN-PROGRESS\"")))
+      '(("h" tags "home+TODO=\"TODO\"|home+TODO=\"IN-PROGRESS\"")
+        ("g" tags "government+TODO=\"TODO\"|government+TODO=\"IN-PROGRESS\"")
+        ("s" tags "shopping+TODO=\"TODO\"|shopping+TODO=\"IN-PROGRESS\"")
+        ("c" tags "car+TODO=\"TODO\"|car+TODO=\"IN-PROGRESS\"")
+        ("w" tags "wedding+TODO=\"TODO\"|wedding+TODO=\"IN-PROGRESS\"")))
 
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
 (setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
