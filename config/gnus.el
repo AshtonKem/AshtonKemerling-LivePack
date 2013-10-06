@@ -7,32 +7,9 @@
                 (nnimap-stream ssl)
                 (nnimap-list-pattern
                  ("INBOX" "*"))
-                (nnimap-authinfo-file "~/.authinfo"))
-        (nnimap "work"
-                (nnimap-address "imap.gmail.com")
-                (nnimap-server-port 993)
-                (nnimap-stream ssl)
-                (nnimap-list-pattern
-                 ("INBOX" "*"))
                 (nnimap-authinfo-file "~/.authinfo"))))
 (setq gnus-parameters
-      '(("nnimap+work:*"
-         (display . all)
-         (posting-style
-          (name "Ashton Kemerling")
-          (address "akemerling@narrativescience.com")
-          (organization "Narrative Science")
-          (signature-file "~/.signature"))
-         (expiry-target . delete)
-        ("nnimap+work:[Gmail]/.*"
-         (display . all)
-         (posting-style
-          (name "Ashton Kemerling")
-          (address "akemerling@narrativescience.com")
-          (organization "Narrative Science")
-          (signature-file "~/.signature"))
-         (expiry-wait . never))
-        ("nnimap+home:*"
+      '((("nnimap+home:*"
          (display . all)
          (posting-style
           (name "Ashton Kemerling")
@@ -53,10 +30,6 @@
              '((".*"
                 (address "ashtonkemerling@gmail.com")
                 (name "Ashton Kemerling"))
-               (".*work:.*"
-                (address "akemerling@narrativescience.com")
-                (name "Ashton Kemerling")
-                (organization "Narrative Science"))
                (".*home:.*"
                 (address "ashtonkemerling@gmail.com")
                 (name "Ashton Kemerling"))))
