@@ -1,30 +1,35 @@
 (require 'gnus)
 
-(setq gnus-secondary-select-methods
-      '((nnimap "home"
-                (nnimap-address "imap.gmail.com")
-                (nnimap-server-port 993)
-                (nnimap-stream ssl)
-                (nnimap-list-pattern
-                 ("INBOX" "*"))
-                (nnimap-authinfo-file "~/.authinfo"))))
-(setq gnus-parameters
-      '((("nnimap+home:*"
-         (display . all)
-         (posting-style
-          (name "Ashton Kemerling")
-          (address "ashtonkemerling@gmail.com")
-          (signature-file "~/.signature"))
-         (expiry-target . delete)
-        ("nnimap+home:[Gmail]/.*"
-         (display . all)
-         (posting-style
-          (name "Ashton Kemerling")
-          (address "ashtonkemerling@gmail.com")
-          (signature-file "~/.signature"))
-         (expiry-wait . never))))))
+(setq gnus-select-method
+      '(nnimap "home"
+               (nnimap-address "imap.gmail.com")
+               (nnimap-server-port 993)
+               (nnimap-stream ssl)
+               (nnimap-list-pattern
+                ("INBOX" "*"))
+               (nnimap-authinfo-file "~/.authinfo.gpg")))
 
-(setq gnus-permanently-visible-groups ".*")
+(setq gnus-parameters
+      '(("nnimap+home:*"
+         (display . all)
+         (posting-style
+          (name "Ashton Kemerling")
+          (address "ashtonkemerling@gmail.com")
+          (signature-file "~/.signature"))
+         (expiry-target . delete))
+        ("nnimap+home:[Gmail]/.*"
+          (display . all)
+          (posting-style
+           (name "Ashton Kemerling")
+           (address "ashtonkemerling@gmail.com")
+           (signature-file "~/.signature"))
+          (expiry-wait . never))))
+
+(setq gnus-thread-sort-functions
+      '((not gnus-thread-sort-by-date)
+        (not gnus-thread-sort-by-number)))
+
+(setq gnus-permanently-visible-groups "INBOX")
 
 (setq gnus-posting-styles
              '((".*"
