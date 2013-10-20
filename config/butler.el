@@ -1,6 +1,5 @@
-(add-to-list 'load-path "/Users/ashtonkemerling/Documents/Butler")
+(add-to-list 'load-path "/home/ashton/Documents/Butler")
 (require 'butler)
 (add-to-list 'butler-server-list
              '(jenkins "Jenkins"
-                       (server-address . "https://jenkins.n-s.us/jenkins/")
-                       (auth-file . "~/.authinfo.gpg")))
+                       (server-address . "http://localhost:8080")))
