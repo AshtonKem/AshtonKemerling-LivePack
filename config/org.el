@@ -10,6 +10,7 @@
         ("c" tags "car+TODO=\"TODO\"|car+TODO=\"IN-PROGRESS\"")
         ("w" tags "wedding+TODO=\"TODO\"|wedding+TODO=\"IN-PROGRESS\"")
         ("p" tags "projects+TODO=\"TODO\"|projects+TODO=\"IN-PROGRESS\"")
+        ("i" tags "gifts+TODO=\"TODO\"|gifts+TODO=\"IN-PROGRESS\"")
         ("t" todo "TICKLE")))
 
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
