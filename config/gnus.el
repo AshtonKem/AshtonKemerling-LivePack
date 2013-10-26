@@ -1,5 +1,5 @@
 (require 'gnus)
-(setq gnus-select-method '(nnnil))
+(setq gnus-select-method '(nntp "news.gwene.org"))
 (setq gnus-secondary-select-methods
       '((nnimap "home"
                 (nnimap-address "imap.gmail.com")
