@@ -25,15 +25,6 @@
 ;Load up our libraries, for binding sake.
 (require 'yafolding)
 
-;Evil
-;(require 'evil)
-;(evil-mode)
-
-
-;Edit with emacs
-(require 'edit-server)
-(edit-server-start)
-
 ;(live-load-config-file "butler.el")
 (live-load-config-file "theme.el")
 ;Bindings goes last, since other files define functions it references.
@@ -49,16 +40,6 @@
 ; This assumes that you've installed aspell via brew.
 (setq ispell-program-name "aspell")
 (add-to-list 'exec-path "/usr/local/bin")
-
-
-;; Bookmarks!
-;(require 'bm)
-                                        ;(setq-default bm-buffer-persistence t)
-
-;; Jabber!
-;(require 'jabber)
-;(add-hook 'jabber-chat-mode-hook 'goto-address)
-
 
 ;; Clojure
 (require 'clojure-mode)
