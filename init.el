@@ -20,6 +20,7 @@
 (live-load-config-file "org.el")
 (live-load-config-file "gnus.el")
 (live-load-config-file "latex.el")
+(live-load-config-file "diminish")
 
 ;Load up our libraries, for binding sake.
 (require 'yafolding)
