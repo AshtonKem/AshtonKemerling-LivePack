@@ -21,3 +21,7 @@
 
 (setq org-default-notes-file "~/org/flagged.org")
 (define-key global-map "\C-cc" 'org-capture)
+(setq org-todo-keyword-faces
+             '(("TICKLE" . "orange")
+               ("REFERENCE" . "blue")
+               ("ABANDONED" . "black")))
