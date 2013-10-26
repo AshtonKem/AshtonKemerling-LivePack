@@ -25,3 +25,8 @@
              '(("TICKLE" . "orange")
                ("REFERENCE" . "blue")
                ("ABANDONED" . "black")))
+(setq org-refile-targets '((nil :maxlevel . 2)
+                           (org-agenda-files :maxlevel . 2)))
+
+(setq org-refile-allow-creating-parent-nodes 'confirm)
+(setq org-refile-use-outline-path 'file)
