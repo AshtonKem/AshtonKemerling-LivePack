@@ -8,6 +8,7 @@
         ("g" tags "government+TODO=\"TODO\"|government+TODO=\"IN-PROGRESS\"")
         ("s" tags "shopping+TODO=\"TODO\"|shopping+TODO=\"IN-PROGRESS\"")
         ("c" tags "car+TODO=\"TODO\"|car+TODO=\"IN-PROGRESS\"")
+        ("b" tags "blog+TODO=\"TODO\"|blog+TODO=\"IN-PROGRESS\"")
         ("w" tags "wedding+TODO=\"TODO\"|wedding+TODO=\"IN-PROGRESS\"")
         ("p" tags "projects+TODO=\"TODO\"|projects+TODO=\"IN-PROGRESS\"")
         ("i" tags "gifts+TODO=\"TODO\"|gifts+TODO=\"IN-PROGRESS\"")
