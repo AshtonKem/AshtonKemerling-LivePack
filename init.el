@@ -7,12 +7,10 @@
 
 (live-load-config-file "util.el")
 
-(live-add-pack-lib "epy")
 (live-add-pack-lib "pylint")
 (live-add-pack-lib "epy/extensions")
 (live-add-pack-lib "w3m")
 (live-add-pack-lib "twittering-mode")
-(live-add-pack-lib "org-jira")
 (live-add-pack-lib "yafolding")
 (live-load-config-file "packages.el")
 (live-load-config-file "ibuffer.el")
