@@ -14,7 +14,6 @@
 (live-add-pack-lib "yafolding")
 (live-load-config-file "packages.el")
 (live-load-config-file "ibuffer.el")
-(live-load-config-file "python.el")
 (live-load-config-file "org.el")
 (live-load-config-file "gnus.el")
 (live-load-config-file "latex.el")
