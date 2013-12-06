@@ -5,5 +5,3 @@
 (package-initialize)
 
 
-(when (not (require 'web nil t))
-  (package-install 'web))
