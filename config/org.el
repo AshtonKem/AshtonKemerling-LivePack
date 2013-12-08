@@ -5,7 +5,8 @@
                          "~/org/media.org"))
 
 (setq org-agenda-custom-commands
-      '(("h" tags "home+TODO=\"TODO\"|home+TODO=\"IN-PROGRESS\"")
+      '(("n" todo "NEXT")
+        ("h" tags "home+TODO=\"TODO\"|home+TODO=\"IN-PROGRESS\"")
         ("g" tags "government+TODO=\"TODO\"|government+TODO=\"IN-PROGRESS\"")
         ("s" tags "shopping+TODO=\"TODO\"|shopping+TODO=\"IN-PROGRESS\"")
         ("c" tags "car+TODO=\"TODO\"|car+TODO=\"IN-PROGRESS\"")
@@ -14,6 +15,12 @@
         ("p" tags "projects+TODO=\"TODO\"|projects+TODO=\"IN-PROGRESS\"")
         ("i" tags "gifts+TODO=\"TODO\"|gifts+TODO=\"IN-PROGRESS\"")
         ("t" todo "TICKLE")))
+
+(setq org-todo-keywords
+      '((sequence "TODO" "NEXT" "IN-PROGRESS" "|" "DONE")
+        (sequence "TICKLE" "|")
+        (sequence "REFERENCE" "|")
+        (sequence "ABANDONED" "|")))
 
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
 (setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
@@ -26,7 +33,8 @@
 (setq org-todo-keyword-faces
              '(("TICKLE" . "orange")
                ("REFERENCE" . "blue")
-               ("ABANDONED" . "black")))
+               ("ABANDONED" . "black")
+               ("NEXT" . "green")))
 (setq org-refile-targets '((nil :maxlevel . 2)
                            (org-agenda-files :maxlevel . 2)))
 
