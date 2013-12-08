@@ -1,7 +1,8 @@
 (setq org-agenda-files '("~/org/gtd.org"
                          "~/org/work.org"
                          "~/org/projects.org"
-                         "~/org/wedding.org"))
+                         "~/org/wedding.org"
+                         "~/org/media.org"))
 
 (setq org-agenda-custom-commands
       '(("h" tags "home+TODO=\"TODO\"|home+TODO=\"IN-PROGRESS\"")
