@@ -22,6 +22,9 @@
 ;Load up our libraries, for binding sake.
 (require 'yafolding)
 
+(require 'helm)
+(require 'helm-ls-git)
+
 ;(live-load-config-file "butler.el")
 (live-load-config-file "theme.el")
 ;Bindings goes last, since other files define functions it references.

@@ -8,3 +8,4 @@
 (global-set-key "\C-cb" 'org-iswitchb)
 (global-set-key (kbd "C-c +") 'increment-number-at-point)
 (global-set-key (kbd "C-'") 'yafolding)
+(global-set-key (kbd "C-c h") 'helm-ls-git-ls)

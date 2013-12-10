@@ -9,4 +9,4 @@
    (or (package-installed-p package)
        (if (y-or-n-p (format "Package %s is missing. Install it? " package)) 
            (package-install package))))
- '(powerline diminish))
+ '(powerline diminish helm helm-ls-git))
