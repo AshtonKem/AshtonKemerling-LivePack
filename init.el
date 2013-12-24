@@ -66,3 +66,6 @@
 
 ;; Rails stuff
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+
+
+(setq custom-file (concat live-current-pack-dir "config/custom.el"))
