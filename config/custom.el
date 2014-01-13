@@ -3,6 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(helm-ff-transformer-show-only-basename nil)
  '(ns-command-modifier (quote meta))
  '(sclang-auto-scroll-post-buffer t)
  '(sclang-eval-line-forward nil))
