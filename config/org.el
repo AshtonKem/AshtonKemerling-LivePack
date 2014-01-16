@@ -2,7 +2,8 @@
                          "~/org/work.org"
                          "~/org/projects.org"
                          "~/org/wedding.org"
-                         "~/org/media.org"))
+                         "~/org/media.org"
+                         "~/org/recipes.org"))
 
 (setq org-agenda-custom-commands
       '(("n" todo "NEXT")
