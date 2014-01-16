@@ -18,6 +18,7 @@
 (live-load-config-file "gnus.el")
 (live-load-config-file "latex.el")
 (live-load-config-file "diminish.el")
+(live-load-config-file "flyspell.el")
 
 ;Load up our libraries, for binding sake.
 (require 'yafolding)
