@@ -19,6 +19,7 @@
 (live-load-config-file "latex.el")
 (live-load-config-file "diminish.el")
 (live-load-config-file "flyspell.el")
+(live-load-config-file "haskell.el")
 
 ;Load up our libraries, for binding sake.
 (require 'yafolding)
