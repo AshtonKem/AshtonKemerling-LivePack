@@ -16,7 +16,7 @@
 (live-load-config-file "ibuffer.el")
 (live-load-config-file "org.el")
 (live-load-config-file "gnus.el")
-(live-load-config-file "latex.el")
+;(live-load-config-file "latex.el")
 (live-load-config-file "diminish.el")
 (live-load-config-file "flyspell.el")
 (live-load-config-file "haskell.el")
