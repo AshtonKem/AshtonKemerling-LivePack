@@ -11,5 +11,5 @@
        (if (y-or-n-p (format "Package %s is missing. Install it? " package))
            (package-install package))))
  '(powerline diminish helm helm-ls-git
-             rvm web-mode mo-git-blame))
-
+             rvm web-mode mo-git-blame
+             scss-mode ag projectile))

@@ -16,6 +16,8 @@
              (mode . magit-status-mode))
             ("Butler"
              (filename . "Documents/Butler"))
+            ("AG"
+             (mode . ag-mode))
             ("Care For Real"
               (filename . "Documents/cfr-app"))
             ("Work"
