@@ -31,6 +31,10 @@
 (live-load-config-file "theme.el")
 ;Bindings goes last, since other files define functions it references.
 (live-load-config-file "bindings.el")
+(require 'magit)
+(if (eq system-type 'darwin)
+    (live-load-config-file "mac.el")
+  (live-load-config-file "linux.el"))
 
 
 
@@ -62,9 +66,6 @@
 ;; Ansi-Term
 (setq system-uses-terminfo nil)
 
-
-(require 'magit)
-(set-variable 'magit-emacsclient-executable "/usr/local/Cellar/emacs/24.3/bin/emacsclient")
 
 ;; Rails stuff
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
