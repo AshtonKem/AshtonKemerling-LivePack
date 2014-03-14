@@ -3,6 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(css-electric-keys (quote (125 59)))
  '(helm-ff-transformer-show-only-basename nil)
  '(ns-command-modifier (quote meta))
  '(sclang-auto-scroll-post-buffer t)
@@ -19,5 +20,6 @@
  '(ediff-odd-diff-A ((((class color) (background dark)) (:background "dark green"))))
  '(ediff-odd-diff-B ((((class color) (background dark)) (:background "dark red"))))
  '(eval-sexp-fu-flash ((((class color) (background dark)) (:background "grey15" :foreground "DeepPink3"))))
+ '(flyspell-incorrect ((t (:underline (:color "red" :style wave)))))
  '(mumamo-background-chunk-major ((((class color) (background dark)) (:background "black"))))
  '(mumamo-background-chunk-submode1 ((((class color) (background dark)) (:background "black")))))
