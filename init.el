@@ -70,6 +70,10 @@
 ;; Rails stuff
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 
+(add-hook 'scss-mode-hook (lambda ()
+                          (electric-pair-mode 1)
+                          (electric-indent-mode 1)))
+
 
 (setq custom-file (concat live-current-pack-dir "config/custom.el"))
 (setq live-disable-zone t)
