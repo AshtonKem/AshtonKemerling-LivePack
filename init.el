@@ -75,6 +75,11 @@
                           (electric-pair-mode 1)
                           (electric-indent-mode 1)))
 
+(add-hook 'org-mode-hook (lambda ()
+                          (electric-pair-mode 0)
+                          (electric-indent-mode 0)))
+
+
 
 (setq custom-file (concat live-current-pack-dir "config/custom.el"))
 (setq live-disable-zone t)
