@@ -12,4 +12,4 @@
            (package-install package))))
  '(powerline diminish helm helm-ls-git
              rvm web-mode mo-git-blame
-             scss-mode ag projectile))
+             ag projectile))

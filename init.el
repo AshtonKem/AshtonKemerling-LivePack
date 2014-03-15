@@ -69,8 +69,9 @@
 
 ;; Rails stuff
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.css.*\\'" . css-mode))
 
-(add-hook 'scss-mode-hook (lambda ()
+(add-hook 'css-mode-hook (lambda ()
                           (electric-pair-mode 1)
                           (electric-indent-mode 1)))
 
