@@ -23,7 +23,8 @@
 
 ;Load up our libraries, for binding sake.
 (require 'yafolding)
-
+(require 'projectile-autoloads)
+(projectile-global-mode)
 (require 'helm)
 (require 'helm-ls-git)
 
