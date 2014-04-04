@@ -71,6 +71,7 @@
 ;; Rails stuff
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.css.*\\'" . css-mode))
+(add-to-list 'auto-mode-alist '("\\.json.jbuilder.*\\'" . ruby-mode))
 
 (add-hook 'css-mode-hook (lambda ()
                           (electric-pair-mode 1)
