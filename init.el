@@ -81,6 +81,9 @@
                           (electric-pair-mode 0)
                           (electric-indent-mode 0)))
 
+(add-hook 'ruby-mode-hook (lambda ()
+                            (electric-indent-mode 1)
+                            (electric-pair-mode 1)))
 
 
 (setq custom-file (concat live-current-pack-dir "config/custom.el"))
