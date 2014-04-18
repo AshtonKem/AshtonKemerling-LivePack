@@ -5,6 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(css-electric-keys (quote (125 59)))
  '(helm-ff-transformer-show-only-basename nil)
+ '(helm-ls-git-show-abs-or-relative (quote relative))
  '(ns-command-modifier (quote meta))
  '(sclang-auto-scroll-post-buffer t)
  '(sclang-eval-line-forward nil))
