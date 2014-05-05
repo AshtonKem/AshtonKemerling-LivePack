@@ -70,12 +70,26 @@
 
 ;; Rails stuff
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.css.*\\'" . css-mode))
 (add-to-list 'auto-mode-alist '("\\.json.jbuilder.*\\'" . ruby-mode))
 
-(add-hook 'css-mode-hook (lambda ()
-                          (electric-pair-mode 1)
-                          (electric-indent-mode 1)))
+;; CSS/SCSS
+
+(require 'smartparens-config)
+
+(defun my-create-newline-and-enter-sexp (&rest _ignored)
+  "Open a new brace or bracket expression, with relevant newlines and indent. "
+  (newline)
+  (indent-according-to-mode)
+  (forward-line -1)
+  (indent-according-to-mode))
+
+(sp-local-pair 'scss-mode "{" nil :post-handlers '(("||\n[i]" "RET")))
+(sp-local-pair 'scss-mode "{" nil :post-handlers '((my-create-newline-and-enter-sexp "RET")))
+
+
+(add-hook 'scss-mode-hook (lambda ()
+                           (smartparens-mode)
+                           (electric-indent-mode 1)))
 
 (add-hook 'org-mode-hook (lambda ()
                           (electric-pair-mode 0)

@@ -20,4 +20,5 @@
            (package-install package))))
  '(powerline diminish helm helm-ls-git
              rvm web-mode mo-git-blame
-             ag projectile haskell-mode))
+             ag projectile haskell-mode
+             smartparens))
