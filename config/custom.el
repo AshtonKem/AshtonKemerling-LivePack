@@ -4,9 +4,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(css-electric-keys (quote (125 59)))
+ '(erc-nick "ashtonkemerling")
  '(helm-ff-transformer-show-only-basename nil)
  '(helm-ls-git-show-abs-or-relative (quote relative))
  '(js2-basic-offset 2)
+ '(magit-diff-options nil)
  '(ns-command-modifier (quote meta))
  '(sclang-auto-scroll-post-buffer t)
  '(sclang-eval-line-forward nil)

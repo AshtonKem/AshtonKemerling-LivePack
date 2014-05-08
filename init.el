@@ -106,3 +106,4 @@
 
 (setq custom-file (concat live-current-pack-dir "config/custom.el"))
 (setq live-disable-zone t)
+(setq erc-hide-list '("JOIN" "PART" "QUIT"))

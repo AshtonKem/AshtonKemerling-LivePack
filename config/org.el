@@ -1,6 +1,7 @@
 (setq org-agenda-files '("~/org/gtd.org"
                          "~/org/work.org"
                          "~/org/projects.org"
+                         "~/org/consulting.org"
                          "~/org/wedding.org"
                          "~/org/media.org"
                          "~/org/recipes.org"))
