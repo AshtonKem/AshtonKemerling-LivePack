@@ -1,5 +1,5 @@
 (require 'diminish)
-
+(require 'projectile)
 (diminish 'yas-minor-mode)
 (diminish 'paredit-mode)
 (diminish 'eldoc-mode)
