@@ -1,6 +1,0 @@
-[submodule "lib/twittering-mode"]
-	path = lib/twittering-mode
-	url = git@github.com:hayamiz/twittering-mode.git
-[submodule "lib/yafolding"]
-	path = lib/yafolding
-	url = git@github.com:zenozeng/yafolding.el.git
