@@ -9,5 +9,5 @@
 (global-set-key (kbd "C-c +") 'increment-number-at-point)
 (global-set-key (kbd "C-c -") 'decrement-number-at-point)
 (global-set-key (kbd "C-'") 'yafolding)
-(global-set-key (kbd "C-c h") 'helm-ls-git-ls)
+(global-set-key (kbd "C-c h") 'helm-projectile)
 (global-set-key (kbd "C-x a") 'ag)

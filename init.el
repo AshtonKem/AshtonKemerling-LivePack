@@ -21,7 +21,6 @@
 
 (require 'projectile-autoloads)
 (require 'helm-projectile)
-(global-set-key (kbd "C-c h") 'helm-projectile)
 (projectile-global-mode)
 
 (require 'rspec-mode)
