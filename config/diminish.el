@@ -8,5 +8,4 @@
 (diminish 'git-gutter-mode)
 (diminish 'elisp-slime-nav-mode)
 (diminish 'auto-complete-mode)
-(diminish 'yas/minor-mode)
 (diminish 'projectile-mode)
