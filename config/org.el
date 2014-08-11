@@ -21,6 +21,7 @@
 (setq org-todo-keywords
       '((sequence "TODO" "NEXT" "IN-PROGRESS" "|" "DONE")
         (sequence "TICKLE" "|")
+        (sequence "BLOCKED" "|")
         (sequence "REFERENCE" "|")
         (sequence "ABANDONED" "|")))
 
@@ -36,9 +37,16 @@
              '(("TICKLE" . "orange")
                ("REFERENCE" . "blue")
                ("ABANDONED" . "black")
-               ("NEXT" . "green")))
+               ("BLOCKED" . "green")
+               ("NEXT" . "red")))
 (setq org-refile-targets '((nil :maxlevel . 2)
                            (org-agenda-files :maxlevel . 2)))
 
 (setq org-refile-allow-creating-parent-nodes 'confirm)
 (setq org-refile-use-outline-path 'file)
+(defun clock-to-hours (clock)
+  (let ((split (split-string clock ":")))
+       (if (= 2 (length split))
+           (+ (string-to-number (car split))
+              (/ (string-to-number (cadr split)) 60.0))
+         0)))
