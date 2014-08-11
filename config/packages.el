@@ -1,8 +1,8 @@
 (require 'package)
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")))
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa-stable" . "http://melpa-stable.milkbox.net/packages/")))
 (package-initialize)
-
 (defvar packages-loaded nil)
 (defun load-packages ()
   (unless packages-loaded
@@ -20,4 +20,4 @@
  '(diminish rvm web-mode mo-git-blame
             ag projectile haskell-mode
             smartparens ghc flycheck-haskell
-            rspec-mode))
+            rspec-mode helm helm-projectile))

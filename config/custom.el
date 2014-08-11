@@ -15,6 +15,7 @@
  '(latex-run-command "pdflatex")
  '(magit-diff-options nil)
  '(ns-command-modifier (quote meta))
+ '(projectile-global-mode t)
  '(rspec-use-rvm t)
  '(sclang-auto-scroll-post-buffer t)
  '(sclang-eval-line-forward nil)

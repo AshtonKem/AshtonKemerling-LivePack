@@ -1,5 +1,4 @@
 (require 'diminish)
-(require 'projectile)
 (diminish 'yas-minor-mode)
 (diminish 'paredit-mode)
 (diminish 'eldoc-mode)
@@ -8,4 +7,3 @@
 (diminish 'git-gutter-mode)
 (diminish 'elisp-slime-nav-mode)
 (diminish 'auto-complete-mode)
-(diminish 'projectile-mode)

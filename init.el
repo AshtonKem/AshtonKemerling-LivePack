@@ -12,15 +12,16 @@
 (live-load-config-file "ibuffer.el")
 (live-load-config-file "org.el")
 (live-load-config-file "gnus.el")
-;(live-load-config-file "latex.el")
 (live-load-config-file "diminish.el")
 (live-load-config-file "flyspell.el")
 (live-load-config-file "haskell.el")
 (live-load-config-file "clojure.el")
 (live-load-config-file "css.el")
 
-;Load up our libraries, for binding sake.
+
 (require 'projectile-autoloads)
+(require 'helm-projectile)
+(global-set-key (kbd "C-c h") 'helm-projectile)
 (projectile-global-mode)
 
 (require 'rspec-mode)
