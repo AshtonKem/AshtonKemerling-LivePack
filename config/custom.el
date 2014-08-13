@@ -20,7 +20,9 @@
  '(sclang-auto-scroll-post-buffer t)
  '(sclang-eval-line-forward nil)
  '(scss-compile-at-save nil)
- '(smartparens-global-strict-mode nil))
+ '(smartparens-global-strict-mode nil)
+ '(user-full-name "Ashton Kemerling")
+ '(user-mail-address "ashtonkemerling@gmail.com"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
