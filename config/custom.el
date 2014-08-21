@@ -16,7 +16,7 @@
  '(magit-diff-options nil)
  '(ns-command-modifier (quote meta))
  '(projectile-global-mode t)
- '(rspec-use-rvm t)
+ '(rspec-use-rvm nil)
  '(sclang-auto-scroll-post-buffer t)
  '(sclang-eval-line-forward nil)
  '(scss-compile-at-save nil)
