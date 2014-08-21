@@ -17,7 +17,6 @@
        (load-packages)
        (if (y-or-n-p (format "Package %s is missing. Install it? " package))
            (package-install package))))
- '(diminish rvm web-mode mo-git-blame
-            ag projectile haskell-mode
-            smartparens ghc flycheck-haskell
+ '(diminish rvm web-mode smartparens
+            ag projectile scss-mode
             rspec-mode helm helm-projectile))
