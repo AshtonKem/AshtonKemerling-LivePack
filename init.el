@@ -60,12 +60,18 @@
                           (electric-indent-mode 0)))
 
 (add-hook 'ruby-mode-hook (lambda ()
+                            (require 'rvm)
                             (setq ruby-deep-indent-paren nil)
                             (electric-indent-mode 1)
                             (electric-pair-mode 1)))
 
 (add-hook 'web-mode-hook (lambda ()
-                           (emmet-mode 1)))
+                           (emmet-mode 1)
+                           (electric-indent-mode 1)))
+
+(add-hook 'html-mode-hook (lambda ()
+                            (emmet-mode 1)
+                            (electric-indent-mode 1)))
 
 
 (setq custom-file (concat live-current-pack-dir "config/custom.el"))
