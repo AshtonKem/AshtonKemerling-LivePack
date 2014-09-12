@@ -18,5 +18,5 @@
        (if (y-or-n-p (format "Package %s is missing. Install it? " package))
            (package-install package))))
  '(diminish rvm web-mode smartparens
-            ag projectile scss-mode
+            ag projectile scss-mode robe
             rspec-mode helm helm-projectile))

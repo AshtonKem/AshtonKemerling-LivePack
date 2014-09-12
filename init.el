@@ -16,10 +16,11 @@
 (live-load-config-file "flyspell.el")
 (live-load-config-file "haskell.el")
 (live-load-config-file "clojure.el")
+(live-load-config-file "ruby.el")
 (live-load-config-file "css.el")
 
 
-(require 'projectile-autoloads)
+(require 'projectile)
 (require 'helm-projectile)
 (projectile-global-mode)
 
