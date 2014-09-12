@@ -14,7 +14,6 @@
 (live-load-config-file "gnus.el")
 (live-load-config-file "diminish.el")
 (live-load-config-file "flyspell.el")
-(live-load-config-file "haskell.el")
 (live-load-config-file "clojure.el")
 (live-load-config-file "ruby.el")
 (live-load-config-file "css.el")
