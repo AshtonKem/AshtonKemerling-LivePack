@@ -59,12 +59,6 @@
                           (electric-pair-mode 0)
                           (electric-indent-mode 0)))
 
-(add-hook 'ruby-mode-hook (lambda ()
-                            (require 'rvm)
-                            (setq ruby-deep-indent-paren nil)
-                            (electric-indent-mode 1)
-                            (electric-pair-mode 1)))
-
 (add-hook 'web-mode-hook (lambda ()
                            (emmet-mode 1)
                            (electric-indent-mode 1)))
