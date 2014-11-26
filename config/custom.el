@@ -3,7 +3,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(cider-lein-command "~/.bin/lein")
  '(css-electric-keys (quote (125 59)))
+ '(emmet-indentation 2)
  '(erc-nick "ashtonkemerling")
  '(haskell-notify-p t)
  '(haskell-process-type (quote ghci))

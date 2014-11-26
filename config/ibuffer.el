@@ -27,6 +27,10 @@
               (filename . "Documents/Narrative-Science-Analytics")))
             ("Scheduling"
              (filename . "Documents/scheduler"))
+            ("DealList"
+             (filename . "Documents/DealList"))
+            ("GoingOn"
+             (filename . "Documents/GoingOn"))
             ("Programming" ;; prog stuff not already in MyProjectX
               (or
                 (mode . c-mode)
