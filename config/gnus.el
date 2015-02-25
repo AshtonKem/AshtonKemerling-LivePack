@@ -5,16 +5,6 @@
                 (nnimap-address "imap.gmail.com")
                 (nnimap-server-port 993)
                 (nnimap-stream ssl)
-                (nnimap-authinfo-file "~/.authinfo.gpg"))
-        (nnimap "pivotal"
-                (nnimap-address "imap.gmail.com")
-                (nnimap-server-port 993)
-                (nnimap-stream ssl)
-                (nnimap-authinfo-file "~/.authinfo.gpg"))
-        (nnimap "symonds"
-                (nnimap-address "imap.gmail.com")
-                (nnimap-server-port 993)
-                (nnimap-stream ssl)
                 (nnimap-authinfo-file "~/.authinfo.gpg"))        ))
 
 (setq gnus-thread-sort-functions
