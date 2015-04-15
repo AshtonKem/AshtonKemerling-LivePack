@@ -7,7 +7,8 @@
                  (mode . org-mode))
                 ("Scheduling"
                  (filename . "Documents/scheduler"))
-
+                ("Live Pack"
+                 (filename . ".live-packs"))
 
                 ("Mail"
                  (or ;; mail-related buffers
