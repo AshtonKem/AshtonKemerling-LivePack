@@ -7,9 +7,3 @@
   (HEAD 2)
   (ANY 2)
   (context 2))
-
-(require 'clj-refactor)
-(add-hook 'clojure-mode-hook (lambda ()
-                               (clj-refactor-mode 1)
-                               (cljr-add-keybindings-with-prefix "C-c r")
-                               ))
