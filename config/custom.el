@@ -14,7 +14,7 @@
  '(helm-ff-transformer-show-only-basename nil)
  '(helm-locate-fuzzy-match nil)
  '(helm-ls-git-show-abs-or-relative (quote relative))
- '(js2-basic-offset 4)
+ '(js2-basic-offset 2)
  '(latex-run-command "pdflatex")
  '(magit-diff-options nil)
  '(ns-command-modifier (quote meta))
@@ -25,7 +25,8 @@
  '(scss-compile-at-save nil)
  '(smartparens-global-strict-mode nil)
  '(user-full-name "Ashton Kemerling")
- '(user-mail-address "ashtonkemerling@gmail.com"))
+ '(user-mail-address "ashtonkemerling@gmail.com")
+ '(vc-svn-program "svn"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
