@@ -1,33 +1,23 @@
 (require 'ibuffer)
 (setq ibuffer-saved-filter-groups
       (quote (( "default"
-                ("Butler"
-                 (filename . "Documents/Butler"))
-                ("Org" ;; all org-related buffers
-                 (mode . org-mode))
-                ("Scheduling"
-                 (filename . "Documents/scheduler"))
                 ("Live Pack"
                  (filename . ".live-packs"))
-
-                ("Mail"
-                 (or ;; mail-related buffers
-                  (mode . message-mode)
-                  (mode . mail-mode)
-                  (mode . gnus-summary-mode)
-                  (mode . gnus-article-mode)
-                  (mode . gnus-group-mode)
-                  ;; etc.; all your mail related modes
-                  ))
                 ("AG"
                  (mode . ag-mode))
-                ("Care For Real"
-                 (filename . "Documents/cfr-app"))
+                ("track"
+                 (or
+                  (filename . "Documents/track")
+                  (name . "*magit: ~/Documents/track/*")))
                 ("TI"
-                 (filename . "Documents/ti"))
+                 (or
+                  (filename . "Documents/ti")
+                  (name . "*magit: ~/Documents/ti/*")))
                 ("Launcher"
-                 (filename . "Documents/launcher"))
-                ("Programming" ;; prog stuff not already in MyProjectX
+                 (or
+                  (name . "*magit: ~/Documents/launcher/*")
+                  (filename . "Documents/launcher")))
+                ("Programming"
                  (or
                   (mode . c-mode)
                   (mode . perl-mode)
