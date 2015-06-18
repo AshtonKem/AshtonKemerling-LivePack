@@ -1,7 +1,4 @@
-(require 'robe)
 (require 'inf-ruby)
-(defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
-  (rvm-activate-corresponding-ruby))
 
 (remove-hook 'ruby-mode-hook 'ruby-electric-mode)
 
