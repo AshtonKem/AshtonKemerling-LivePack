@@ -7,3 +7,5 @@
   (HEAD 2)
   (ANY 2)
   (context 2))
+
+(cljr-add-keybindings-with-prefix "C-c r")
