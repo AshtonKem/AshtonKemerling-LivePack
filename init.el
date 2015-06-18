@@ -8,6 +8,7 @@
 (live-load-config-file "util.el")
 
 (live-add-pack-lib "w3m")
+(live-add-pack-lib "magit-svn")
 (live-load-config-file "packages.el")
 (live-load-config-file "ibuffer.el")
 (live-load-config-file "org.el")
@@ -21,9 +22,10 @@
 
 (require 'projectile)
 (require 'helm-projectile)
+(require 'magit-svn)
 (projectile-global-mode)
 
-(require 'rspec-mode)
+;; (require 'rspec-mode)
 (live-load-config-file "theme.el")
 ;Bindings goes last, since other files define functions it references.
 (live-load-config-file "bindings.el")
@@ -72,3 +74,4 @@
 (setq live-disable-zone t)
 (setq erc-hide-list '("JOIN" "PART" "QUIT"))
 (setq magit-last-seen-setup-instructions "1.4.0")
+(windmove-default-keybindings 'meta)
