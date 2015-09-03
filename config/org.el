@@ -2,22 +2,25 @@
                          "~/org/inbox.org"
                          "~/org/reference.org"
                          "~/org/tickle.org"
-                         "~/org/projects.org"
-                         "~/org/consulting.org"
-                         "~/org/wedding.org"
                          "~/org/media.org"
                          "~/org/recipes.org"))
 
 (setq org-agenda-custom-commands
-      '(("n" todo "NEXT")
-        ("c" tags "consulting+TODO=\"TODO\"|consulting+TODO=\"IN-PROGRESS\"|consulting+TODO=\"NEXT\"")
-        ("w" tags "wedding+TODO=\"TODO\"|wedding+TODO=\"IN-PROGRESS\"")
-        ("p" tags "projects+TODO=\"TODO\"|projects+TODO=\"IN-PROGRESS\"")
-        ("t" todo "TICKLE")))
+      '(("R" "Review"
+         ((agenda "" ((org-agenda-ndays 7))) ;; review upcoming deadlines and appointments
+          ;; type "l" in the agenda to review logged items
+          (stuck "") ;; review stuck projects as designated by org-stuck-projects
+          (todo "NEXT") ;; review all projects (assuming you use todo keywords to designate projects)
+          (todo "IN-PROGRESS") ;; review someday/maybe items
+          (todo "BLOCKED")
+          (todo "Maybe")))
+        ("S" "Shopping"
+         tags "shopping+TODO=\"NEXT\"")))
 
 (setq org-todo-keywords
-      '((sequence "TODO" "BLOCKED" "NEXT" "IN-PROGRESS" "|" "DONE")
-        (sequence "TICKLE" "|")
+      '((sequence "TODO" "NEXT" "IN-PROGRESS" "|" "DONE")
+        (sequence "MAYBE" "|")
+        (sequence "BLOCKED")
         (sequence "REFERENCE" "|")
         (sequence "|" "ABANDONED")))
 
@@ -46,3 +49,11 @@
            (+ (string-to-number (car split))
               (/ (string-to-number (cadr split)) 60.0))
          0)))
+
+ (setq org-capture-templates
+       '(("t" "todo" entry (file "~/org/inbox.org")
+          "* TODO %?\n%T\n%f\n")
+         ("n" "next" entry (file "~/org/inbox.org")
+          "* NEXT %?\n%T\n%f\n")
+         ("b" "blocked" entry (file "~/org/inbox.org")
+          "* BLOCKED %?\n%T\n%f\n")))
