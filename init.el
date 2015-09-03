@@ -16,7 +16,6 @@
 (live-load-config-file "diminish.el")
 (live-load-config-file "flyspell.el")
 (live-load-config-file "clojure.el")
-(live-load-config-file "ruby.el")
 (live-load-config-file "css.el")
 
 
@@ -74,4 +73,3 @@
 (setq live-disable-zone t)
 (setq erc-hide-list '("JOIN" "PART" "QUIT"))
 (setq magit-last-seen-setup-instructions "1.4.0")
-(windmove-default-keybindings 'meta)
