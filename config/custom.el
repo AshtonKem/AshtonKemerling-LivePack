@@ -18,6 +18,11 @@
  '(latex-run-command "pdflatex")
  '(magit-diff-options nil)
  '(ns-command-modifier (quote meta))
+ '(org-stuck-projects
+   (quote
+    ("+LEVEL=1/-MAYBE-DONE-REFERENCE"
+     ("TODO" "NEXT" "NEXTACTION")
+     nil "")))
  '(projectile-global-mode t)
  '(rspec-use-rvm nil)
  '(sclang-auto-scroll-post-buffer t)
