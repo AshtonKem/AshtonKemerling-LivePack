@@ -18,10 +18,12 @@
 (live-load-config-file "clojure.el")
 (live-load-config-file "css.el")
 
-
+(require 'helm)
 (require 'projectile)
-(require 'helm-projectile)
+;(defalias 'helm-ff-mode-line-string helm-read-file-name-mode-line-string)
+;(require 'helm-projectile)
 (require 'magit-svn)
+
 (projectile-global-mode)
 
 ;; (require 'rspec-mode)
@@ -47,6 +49,7 @@
 ;; Rails stuff
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.json.jbuilder.*\\'" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.yml.*\\'" . yaml-mode))
 
 ;; CSS/SCSS
 
@@ -73,3 +76,9 @@
 (setq live-disable-zone t)
 (setq erc-hide-list '("JOIN" "PART" "QUIT"))
 (setq magit-last-seen-setup-instructions "1.4.0")
+(windmove-default-keybindings 'meta)
+
+(require 'ansi-color)
+(defun display-ansi-colors ()
+  (interactive)
+  (ansi-color-apply-on-region (point-min) (point-max)))
