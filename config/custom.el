@@ -4,6 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(cider-lein-command "~/.bin/lein")
+ '(cljr-favor-prefix-notation nil)
  '(css-electric-keys (quote (125 59)))
  '(emmet-indentation 2)
  '(erc-nick "ashtonkemerling")
