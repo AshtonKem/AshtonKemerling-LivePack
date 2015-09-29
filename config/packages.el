@@ -16,4 +16,4 @@
    (or (package-installed-p package)
        (load-packages)
        (package-install package)))
- '(diminish web-mode smartparens ag projectile helm helm-projectile))
+ '(diminish web-mode smartparens ag))

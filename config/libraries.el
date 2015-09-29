@@ -1,0 +1,5 @@
+(live-add-pack-lib "w3m")
+(live-add-pack-lib "magit-svn")
+(live-add-pack-lib "projectile")
+(live-add-pack-lib "helm")
+(live-add-pack-lib "helm-ag")

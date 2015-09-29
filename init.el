@@ -7,8 +7,7 @@
 
 (live-load-config-file "util.el")
 
-(live-add-pack-lib "w3m")
-(live-add-pack-lib "magit-svn")
+(live-load-config-file "libraries.el")
 (live-load-config-file "packages.el")
 (live-load-config-file "ibuffer.el")
 (live-load-config-file "org.el")
@@ -19,9 +18,11 @@
 (live-load-config-file "css.el")
 
 (require 'helm)
+(require 'helm-ag)
 (require 'projectile)
-;(defalias 'helm-ff-mode-line-string helm-read-file-name-mode-line-string)
-;(require 'helm-projectile)
+(require 'helm-projectile)
+(helm-projectile-on)
+(require 'magit)
 (require 'magit-svn)
 
 (projectile-global-mode)
@@ -30,7 +31,7 @@
 (live-load-config-file "theme.el")
 ;Bindings goes last, since other files define functions it references.
 (live-load-config-file "bindings.el")
-(require 'magit)
+
 (if (eq system-type 'darwin)
     (live-load-config-file "mac.el")
   (live-load-config-file "linux.el"))

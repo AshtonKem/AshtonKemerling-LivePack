@@ -1,0 +1,9 @@
+[submodule "lib/projectile"]
+	path = lib/projectile
+	url = git@github.com:bbatsov/projectile.git
+[submodule "lib/helm"]
+	path = lib/helm
+	url = git@github.com:emacs-helm/helm.git
+[submodule "lib/helm-ag"]
+	path = lib/helm-ag
+	url = git@github.com:syohex/emacs-helm-ag.git
