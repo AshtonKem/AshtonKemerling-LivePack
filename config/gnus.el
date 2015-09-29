@@ -5,7 +5,7 @@
                 (nnimap-address "imap.gmail.com")
                 (nnimap-server-port 993)
                 (nnimap-stream ssl)
-                (nnimap-authinfo-file "~/.authinfo.gpg"))        ))
+                (nnimap-authinfo-file "~/.authinfo.gpg"))))
 
 (setq gnus-thread-sort-functions
       '((not gnus-thread-sort-by-date)
