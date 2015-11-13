@@ -17,6 +17,8 @@
                  (or
                   (name . "*magit: ~/Documents/launcher/*")
                   (filename . "Documents/launcher")))
+                ("Logs"
+                 (mode . syslog-mode))
                 ("Programming"
                  (or
                   (mode . c-mode)
