@@ -24,7 +24,6 @@
 (helm-projectile-on)
 (require 'magit)
 (require 'magit-svn)
-
 (projectile-global-mode)
 
 ;; (require 'rspec-mode)
@@ -51,6 +50,7 @@
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.json.jbuilder.*\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.yml.*\\'" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.json" . json-mode))
 
 ;; CSS/SCSS
 
